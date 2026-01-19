@@ -4,6 +4,7 @@ import './App.css'
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Project from "./pages/Project";
+import GoBackButton from "./components/GoBackButton"
 
 //import Loading from "./pages/Loading";
 
@@ -43,6 +44,8 @@ export default function App() {
             } 
           />
         </Routes>
+
+        <GoBackButton />
     </Router>
 
   )
