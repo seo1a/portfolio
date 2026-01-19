@@ -18,7 +18,7 @@ export default function Home(){
                 className="
                     group
                     w-44 lg:w-82 h-44 lg:h-82
-                    absolute top-[66%] left-[30%] lg:left-[40%]
+                    absolute top-[70%] lg:top-[66%] left-[30%] lg:left-[40%]
                     -translate-x-1/2 -translate-y-1/2 cursor-pointer"
                 >
                     <img src={iconImage1_up}
@@ -45,7 +45,7 @@ export default function Home(){
                     className="
                     group
                     w-45 lg:w-90 h-45 lg:h-90
-                    absolute top-[66%] left-[74%] lg:left-[60.5%]
+                    absolute top-[70%] lg:top-[66%] left-[74%] lg:left-[60.5%]
                     -translate-x-1/2 -translate-y-1/2 cursor-pointer"
                 >
                     <img src={iconImage2_up}
