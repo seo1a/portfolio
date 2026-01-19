@@ -2,4 +2,8 @@
 @theme {
   --font-sandoll: "sandoll-gothicneo2", sans-serif;
   --font-wonchuri: "high1-wonchuri-body", sans-serif;
+  --font-pixel: "pf-pixelscript", sans-serif;
+  --font-pixel2: "argent-pixel-cf", sans-serif;
+
+  --color-myGreen: #00ff57;
 }

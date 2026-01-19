@@ -1,4 +1,5 @@
 import backgroundImage from "../assets/background.png";
+import projectLogo from "../assets/Project_logo.png";
 import jonmatSearcherImg from "../assets/jonmat_searcher1.png";
 import movieProjectImg from "../assets/movie_project1.png";
 import animalCrossingImg from "../assets/animal_crossing1.png";
@@ -21,11 +22,12 @@ export default function Project(){
                 backgroundSize: "100% auto",
             }}
             >
-            <h1 className="text-6xl text-center mb-[15vh]">Project</h1>
+            {/* <h1 className="text-6xl text-center mb-[15vh]">Project</h1> */}
+            <img src={projectLogo} className="mx-auto w-[20vw] h-auto mb-[15vh]"/>
 
             <div className="flex flex-col gap-[25vh] text-center">
                 <div>
-                    <h1 className="text-4xl mb-[5vh]">STRXXT</h1>
+                    <p className='[font-family:"pf-pixelscript",sans-serif] text-5xl text-neutral-700 font-bold mb-[5vh]'>STRXXT</p>
                     <div className="relative mx-auto w-[65vw] pt-[8vh] pb-[10vh] rounded-4xl overflow-hidden">
                         {/* 배경 레이어 */}
                         <div className="absolute inset-0 bg-white opacity-60"></div>
@@ -65,20 +67,48 @@ export default function Project(){
                                 playsInline
                                 className="mx-auto w-[50vw] mb-[8vh]"
                             />
-                            <div className='mx-[15vw] text-center [font-family:"wonchuri",sans-serif] font-[400] text-[17px]'>
-                                <p>STRXXT는 스트릿 패션 문화를 탐색하고 브랜드, 아이템을 소개하는 반응형 웹 매거진 애플리케이션입니다.</p>
+                            <div className='mx-[15vw] text-center [font-family:"high1-wonchuri-body",sans-serif] text-[19px]'>
+                                <div className="flex justify-center items-center gap-x-4 mb-8">
+                                    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" className="rounded-lg"/>
+                                    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" className="rounded-lg"/>
+                                    <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" className="rounded-lg"/>
+                                    <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=gsap&logoColor=000" className="rounded-lg"/>
+                                </div>
+
+                                <p><span className="underline decoration-wavy decoration-myGreen font-bold">STRXXT</span>는 스트릿 패션 문화를 탐색하고 브랜드, 아이템을 소개하는 반응형 웹 매거진 애플리케이션입니다.</p>
                                 <p>본 프로젝트는 그동안 학습한 프론트엔드 개발 전반의 기능과 표현 기법을 하나의 프로젝트에 종합적으로 적용해보기 위해 진행하였습니다. 패션을 주제로 한 소개형 웹페이지로, 적절한 외부 API가 존재하지 않아 직접 콘텐츠 소스를 수집하고 JSON 형식의 데이터로 구조화하여 사용했습니다.</p>
 
                                 <p>본 프로젝트에서는 스크롤과 GSAP 애니메이션을 활용한 시각적 흐름과 사용자 경험 설계에 보다 집중했습니다. 설명 텍스트가 스크롤에 따라 동적으로 등장하는 효과, 가로 스크롤 기반 섹션 구성, 스크롤이 최하단에 도달하면 다음 페이지로 자연스럽게 전환되는 인터랙션 등을 구현하여, 사용자가 콘텐츠를 ‘읽는 것’보다 경험하며 탐색할 수 있도록 구성했습니다.</p>
 
                                 <p>프로젝트의 성격에 따라 기능 우선순위와 UX 설계 방향이 달라져야 함을 체감하고 정리하는 계기가 된 프로젝트였습니다.</p>
+                            
+                                <div className="flex justify-center gap-6 mt-12 mb-5">
+                                    <a
+                                        href="https://github.com/seo1a/fashion-magazine"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="w-[6vw] px-5 py-3 rounded-xl bg-indigo-600 text-white text-lg font-bold hover:opacity-80 transition"
+                                    >
+                                        🔗깃허브
+                                    </a>
+                                    <a
+                                        href="https://my-fashion-magazine.vercel.app/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="w-[6vw] px-5 py-3 rounded-xl bg-myGreen/80 text-black text-lg font-bold hover:opacity-80 transition"
+                                    >
+                                        🔗배포
+                                    </a>
+                                </div>
                             </div>
+
+                            
                         </div>
                     </div>
                 </div>
 
                 <div>
-                    <h1 className="text-4xl mb-[5vh]">Jonmat Searcher</h1>
+                    <h1 className='[font-family:"pf-pixelscript",sans-serif] text-5xl text-neutral-700 font-bold mb-[5vh]'>JMT Searcher</h1>
                     <div className="relative mx-auto w-[65vw] pt-[8vh] pb-[10vh] rounded-4xl overflow-hidden">
                         
                         <div className="absolute inset-0 bg-white opacity-60"></div>
@@ -93,8 +123,15 @@ export default function Project(){
                                 playsInline
                                 className="mx-auto w-[50vw] mb-[8vh]"
                             />
-                            <div className='mx-[15vw] text-center [font-family:"wonchuri",sans-serif] font-[400] text-[17px]'>
-                                <p>맛집을 검색하면 리뷰, 사진, 지도 상 위치 정보를 확인할 수 있는 반응형 웹 애플리케이션입니다.</p>
+                            <div className='mx-[15vw] text-center [font-family:"high1-wonchuri-body",sans-serif] text-[19px]'>
+                                <div className="flex justify-center items-center gap-x-4 mb-8">
+                                    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" className="rounded-lg"/>
+                                    <img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=orange" className="rounded-lg"/>
+                                    <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" className="rounded-lg"/>
+                                    <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white" className="rounded-lg"/>
+                                </div>
+
+                                <p><span className="underline decoration-wavy decoration-blue-400 font-bold">JMT Searcher</span>은 맛집을 검색하면 리뷰, 사진, 지도 상 위치 정보를 확인할 수 있는 반응형 웹 애플리케이션입니다.</p>
                                 <p>네이버 블로그, 구글 플레이스, 카카오맵 총 3가지 플랫폼의 리뷰와 사진을 확인하고 비교할 수 있습니다.</p>
 
                                 <p>맛집 검색기를 만들게 된 이유는 내가 직접 쓰고 싶은 웹서비스를 만들어보고 싶다는 생각에서였습니다.</p>
@@ -108,13 +145,32 @@ export default function Project(){
                                 <p>따라서 누구나 쉽게 쓸 수 있도록 직관적인 싱글 페이지 UI를 설계했으며, 모바일 최적화도 함께 고려했습니다.</p>
                                 <p>맛집의 위치를 표시할 지도 api로는 네이버 지도 api의 search place 기능이 운영 종료된 관계로, 장소 검색 라이브러리가 제공되는 카카오맵 api를 선택했습니다.</p>
                                 <p>사용자가 직접 맛집을 검색하고, 여러 플랫폼의 사진과 리뷰를 빠르게 비교하며 결정할 수 있는 경험을 만드는 것이 본 프로젝트의 핵심 목표입니다.</p>
+                            
+                                <div className="flex justify-center gap-6 mt-12 mb-5">
+                                    <a
+                                        href="https://github.com/seo1a/jonmat-searcher"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="w-[6vw] px-5 py-3 rounded-xl bg-indigo-600 text-white text-lg font-bold hover:opacity-80 transition"
+                                    >
+                                        🔗깃허브
+                                    </a>
+                                    <a
+                                        href="https://jonmat-searcher.vercel.app"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="w-[6vw] px-5 py-3 rounded-xl bg-blue-400 text-white text-lg font-bold hover:opacity-80 transition"
+                                    >
+                                        🔗배포
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div>
-                    <h1 className="text-4xl mb-[5vh]">Animal Crossing</h1>
+                    <h1 className='[font-family:"pf-pixelscript",sans-serif] text-5xl text-neutral-700 font-bold mb-[5vh]'>Animal Crossing</h1>
                     <div className="relative mx-auto w-[65vw] pt-[8vh] pb-[10vh] rounded-4xl overflow-hidden">
                         
                         <div className="absolute inset-0 bg-white opacity-60"></div>
@@ -129,8 +185,16 @@ export default function Project(){
                                 playsInline
                                 className="mx-auto w-[50vw] mb-[8vh]"
                             />
-                            <div className='mx-[15vw] text-center [font-family:"wonchuri",sans-serif] font-[400] text-[17px]'>
-                                <p>모아봐요 동물의숲은 게임 동물의숲 이웃의 정보를 확인하고 검색 및 기준에 따른 모아보기를 할 수 있는 반응형 웹 애플리케이션입니다.</p>
+                            <div className='mx-[15vw] text-center [font-family:"high1-wonchuri-body",sans-serif] text-[19px]'>
+                                <div className="flex justify-center items-center gap-x-4 mb-8">
+                                    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" className="rounded-lg"/>
+                                    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" className="rounded-lg"/>
+                                    <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" className="rounded-lg"/>
+                                    <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=gsap&logoColor=000" className="rounded-lg"/>
+                                    <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white" className="rounded-lg"/>
+                                </div>
+                                
+                                <p><span className="underline decoration-wavy decoration-emerald-400 font-bold">모아봐요 동물의숲</span>은 게임 동물의숲 이웃의 정보를 확인하고 검색 및 기준에 따른 모아보기를 할 수 있는 반응형 웹 애플리케이션입니다.</p>
                                 <p>Animal Crossing 프로젝트는 데이터 중심의 기능 구현보다는, 시각적 인터랙션과 사용자 경험(UI/UX)에 집중하기 위해 진행한 개인 프로젝트입니다.</p>
                                 <p>Nookipedia API를 통해 제공되는 제한적인 정보 구조를 가진 데이터를 바탕으로, 이를 어떻게 시각적으로 흥미롭게 표현할 수 있을지에 대해 고민하며 기획을 시작했습니다.</p>
 
@@ -141,13 +205,32 @@ export default function Project(){
                                 <p>로고와 폰트는 게임의 아이덴티티를 참고하여 선택하였으며, 각 주민의 고유 색상을 카드 UI에 적용해 시각적인 다양성과 구분감을 주었습니다.</p>
 
                                 <p>본 프로젝트는 외부 API로부터 받아온 데이터를 기반으로, 애니메이션과 디자인 요소를 적극적으로 활용해 정보 전달과 시각적 경험을 동시에 만족시키는 UI를 구현하는 데 초점을 둔 프로젝트입니다.</p>
+                            
+                                <div className="flex justify-center gap-6 mt-12 mb-5">
+                                    <a
+                                        href="https://github.com/seo1a/animal-crossing"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="w-[6vw] px-5 py-3 rounded-xl bg-indigo-600 text-white text-lg font-bold hover:opacity-80 transition"
+                                    >
+                                        🔗깃허브
+                                    </a>
+                                    <a
+                                        href="https://animal-crossing-henna.vercel.app/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="w-[6vw] px-5 py-3 rounded-xl bg-emerald-400 text-white text-lg font-bold hover:opacity-80 transition"
+                                    >
+                                        🔗배포
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div>
-                    <h1 className="text-4xl mb-[5vh]">Movie Project</h1>
+                    <h1 className='[font-family:"pf-pixelscript",sans-serif] text-5xl text-neutral-700 font-bold mb-[5vh]'>Movie Project</h1>
                     <div className="relative mx-auto w-[65vw] pt-[8vh] pb-[10vh] rounded-4xl overflow-hidden">
                         
                         <div className="absolute inset-0 bg-white opacity-60"></div>
@@ -162,8 +245,15 @@ export default function Project(){
                                 playsInline
                                 className="mx-auto w-[50vw] mb-[8vh]"
                             />
-                            <div className='mx-[15vw] text-center [font-family:"wonchuri",sans-serif] font-[400] text-[17px]'>
-                                <p>Movie Project는 현재 상영 중인 영화 목록을 조회·검색·정렬·즐겨찾기할 수 있는 반응형 웹 애플리케이션입니다.</p>
+                            <div className='mx-[15vw] text-center [font-family:"high1-wonchuri-body",sans-serif] text-[19px]'>
+                                <div className="flex justify-center items-center gap-x-4 mb-8">
+                                    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" className="rounded-lg"/>
+                                    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" className="rounded-lg"/>
+                                    <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" className="rounded-lg"/>
+                                    <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white" className="rounded-lg"/>
+                                </div>
+                                
+                                <p><span className="underline decoration-wavy decoration-red-400 font-bold">Movie Project</span>는 현재 상영 중인 영화 목록을 조회·검색·정렬·즐겨찾기할 수 있는 반응형 웹 애플리케이션입니다.</p>
                                 <p>이 프로젝트는 과거 프론트엔드 개발자로서의 기초 역량과 개인적인 기술 숙련도를 향상시키는 것을 목표로 시작한 프로젝트입니다.</p>
                                 <p>JavaScript 언어로만 구현했던 jonmat-searcher 프로젝트 이후, TypeScript를 처음으로 학습하고 실전에서 적용해보기 위한 목적도 함께 담고 있습니다.</p>
 
@@ -172,6 +262,25 @@ export default function Project(){
 
                                 <p>본 프로젝트는 화려한 기능보다는, 프론트엔드 개발자가 기본적으로 이해하고 있어야 할 기능들을 실제 서비스 흐름 안에서 구현해보는 것에 중점을 두었으며,</p>
                                 <p>TypeScript 기반 React 개발에 대한 이해도를 높이고, 실무에 가까운 코드 구조를 경험하는 것을 목표로 구현하였습니다.</p>
+                            
+                                <div className="flex justify-center gap-6 mt-12 mb-5">
+                                    <a
+                                        href="https://github.com/seo1a/movie-project-ts"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="w-[6vw] px-5 py-3 rounded-xl bg-indigo-600 text-white text-lg font-bold hover:opacity-80 transition"
+                                    >
+                                        🔗깃허브
+                                    </a>
+                                    <a
+                                        href="https://movie-project-ts-eosin.vercel.app"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="w-[6vw] px-5 py-3 rounded-xl bg-red-400 text-white text-lg font-bold hover:opacity-80 transition"
+                                    >
+                                        🔗배포
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
