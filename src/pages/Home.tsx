@@ -17,8 +17,8 @@ export default function Home(){
                 <button
                 className="
                     group
-                    w-82 h-82
-                    absolute top-[66%] left-[40%]
+                    w-46 lg:w-82 h-46 lg:h-82
+                    absolute top-[66%] left-[30%] lg:left-[40%]
                     -translate-x-1/2 -translate-y-1/2 cursor-pointer"
                 >
                     <img src={iconImage1_up}
@@ -44,8 +44,8 @@ export default function Home(){
                 <button
                     className="
                     group
-                    w-90 h-90
-                    absolute top-[66%] left-[60.5%]
+                    w-50 lg:w-90 h-50 lg:h-90
+                    absolute top-[66%] left-[73%] lg:left-[60.5%]
                     -translate-x-1/2 -translate-y-1/2 cursor-pointer"
                 >
                     <img src={iconImage2_up}
