@@ -17,7 +17,7 @@ export default function Home(){
                 <button
                 className="
                     group
-                    w-46 lg:w-82 h-46 lg:h-82
+                    w-44 lg:w-82 h-44 lg:h-82
                     absolute top-[66%] left-[30%] lg:left-[40%]
                     -translate-x-1/2 -translate-y-1/2 cursor-pointer"
                 >
@@ -44,7 +44,7 @@ export default function Home(){
                 <button
                     className="
                     group
-                    w-50 lg:w-90 h-50 lg:h-90
+                    w-48 lg:w-90 h-48 lg:h-90
                     absolute top-[66%] left-[73%] lg:left-[60.5%]
                     -translate-x-1/2 -translate-y-1/2 cursor-pointer"
                 >

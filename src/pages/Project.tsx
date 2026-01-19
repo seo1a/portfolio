@@ -39,7 +39,7 @@ export default function Project(){
                                 loop
                                 muted
                                 playsInline
-                                className="mx-auto w-[70vw] lg:w-[50vw] mb-[6vh] lg:mb-[8vh]"
+                                className="mx-auto w-[70vw] lg:w-[50vw] mb-[3vh] lg:mb-[8vh]"
                             />
                             <video
                                 src={strxxtVideo2}
@@ -47,7 +47,7 @@ export default function Project(){
                                 loop
                                 muted
                                 playsInline
-                                className="mx-auto w-[70vw] lg:w-[50vw] mb-[6vh] lg:mb-[8vh]"
+                                className="mx-auto w-[70vw] lg:w-[50vw] mb-[3vh] lg:mb-[8vh]"
                             />
                             <video
                                 src={strxxtVideo3}
@@ -55,7 +55,7 @@ export default function Project(){
                                 loop
                                 muted
                                 playsInline
-                                className="mx-auto w-[70vw] lg:w-[50vw] mb-[6vh] lg:mb-[8vh]"
+                                className="mx-auto w-[70vw] lg:w-[50vw] mb-[3vh] lg:mb-[8vh]"
                             />
                             <video
                                 src={strxxtVideo4}
@@ -63,7 +63,7 @@ export default function Project(){
                                 loop
                                 muted
                                 playsInline
-                                className="mx-auto w-[70vw] lg:w-[50vw] mb-[6vh] lg:mb-[8vh]"
+                                className="mx-auto w-[70vw] lg:w-[50vw] mb-[3vh] lg:mb-[8vh]"
                             />
                             <div className='mx-[8vw] lg:mx-[15vw] text-center [font-family:"high1-wonchuri-body",sans-serif] text-[13px] md:text-[15px] lg:text-[19px]'>
                                 <div className="flex justify-center items-center gap-x-2 md:gap-x-3 lg:gap-x-4 mb-8">
@@ -216,12 +216,28 @@ export default function Project(){
                                 className="mx-auto w-[70vw] lg:w-[50vw] mb-[6vh] lg:mb-[8vh]"
                             />
                             <div className='mx-[8vw] lg:mx-[15vw] text-center [font-family:"high1-wonchuri-body",sans-serif] text-[13px] md:text-[15px] lg:text-[19px]'>
-                                <div className="flex justify-center items-center gap-x-2 md:gap-x-3 lg:gap-x-4 mb-8">
-                                    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" className="rounded-lg h-4 md:h-auto"/>
-                                    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" className="rounded-lg h-4 md:h-auto"/>
-                                    <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" className="rounded-lg h-4 md:h-auto"/>
-                                    <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=gsap&logoColor=000" className="rounded-lg h-4 md:h-auto"/>
-                                    <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white" className="rounded-lg h-4 md:h-auto"/>
+                                <div className="flex flex-wrap justify-center items-center gap-2 md:gap-3 lg:gap-4 mb-8">
+                                    {/* 모바일에서만 2줄 강제 배치를 위한 wrapper */}
+                                    <div className="contents md:hidden">
+                                        <div className="flex justify-center gap-2">
+                                        <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" className="rounded-lg h-5 sm:h-6" />
+                                        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" className="rounded-lg h-5 sm:h-6" />
+                                        </div>
+                                        <div className="flex justify-center gap-2 mt-2">
+                                        <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" className="rounded-lg h-5 sm:h-6" />
+                                        <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=gsap&logoColor=000" className="rounded-lg h-5 sm:h-6" />
+                                        <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white" className="rounded-lg h-5 sm:h-6" />
+                                        </div>
+                                    </div>
+
+                                    {/* md 이상(PC/태블릿)에서는 원래처럼 한 줄로 */}
+                                    <div className="hidden md:flex justify-center items-center gap-x-3 lg:gap-x-4">
+                                        <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" className="rounded-lg h-7 lg:h-auto" />
+                                        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" className="rounded-lg h-7 lg:h-auto" />
+                                        <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" className="rounded-lg h-7 lg:h-auto" />
+                                        <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=gsap&logoColor=000" className="rounded-lg h-7 lg:h-auto" />
+                                        <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white" className="rounded-lg h-7 lg:h-auto" />
+                                    </div>
                                 </div>
                                 
                                 <p><span className="underline decoration-wavy decoration-emerald-400 font-bold">모아봐요 동물의숲</span>은 게임 동물의숲 이웃의 정보를 확인하고 검색 및 기준에 따른 모아보기를 할 수 있는 반응형 웹 애플리케이션입니다.</p>
