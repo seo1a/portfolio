@@ -23,25 +23,23 @@ export default function Project(){
             }}
             >
             {/* <h1 className="text-6xl text-center mb-[15vh]">Project</h1> */}
-            <img src={projectLogo} className="mx-auto w-[20vw] h-auto mb-[15vh]"/>
+            <img src={projectLogo} className="mx-auto w-[50vw] lg:w-[20vw] h-auto mb-[10vh] lg:mb-[15vh]"/>
 
-            <div className="flex flex-col gap-[25vh] text-center">
+            <div className="flex flex-col gap-[15vh] lg:gap-[25vh] text-center">
                 <div>
-                    <p className='[font-family:"pf-pixelscript",sans-serif] text-5xl text-neutral-700 font-bold mb-[5vh]'>STRXXT</p>
-                    <div className="relative mx-auto w-[65vw] pt-[8vh] pb-[10vh] rounded-4xl overflow-hidden">
-                        {/* 배경 레이어 */}
+                    <h1 className='[font-family:"pf-pixelscript",sans-serif] text-3xl md:text-4xl lg:text-5xl text-neutral-700 font-bold mb-[3vh] lg:mb-[5vh]'>STRXXT</h1>
+                    <div className="relative mx-auto w-[85vw] lg:w-[65vw] pt-[4vh] lg:pt-[8vh] pb-[8vh] lg:pb-[10vh] rounded-4xl overflow-hidden">
                         <div className="absolute inset-0 bg-white opacity-60"></div>
 
-                        {/* 콘텐츠 레이어 */}
                         <div className="relative z-10">
-                            <img src={strxxtImg} className="mx-auto w-[50vw] mb-[8vh]" />
+                            <img src={strxxtImg} className="mx-auto w-[70vw] lg:w-[50vw] mb-[3vh] lg:mb-[8vh]" />
                             <video
                                 src={strxxtVideo1}
                                 autoPlay
                                 loop
                                 muted
                                 playsInline
-                                className="mx-auto w-[50vw] mb-[8vh]"
+                                className="mx-auto w-[70vw] lg:w-[50vw] mb-[6vh] lg:mb-[8vh]"
                             />
                             <video
                                 src={strxxtVideo2}
@@ -49,7 +47,7 @@ export default function Project(){
                                 loop
                                 muted
                                 playsInline
-                                className="mx-auto w-[50vw] mb-[8vh]"
+                                className="mx-auto w-[70vw] lg:w-[50vw] mb-[6vh] lg:mb-[8vh]"
                             />
                             <video
                                 src={strxxtVideo3}
@@ -57,7 +55,7 @@ export default function Project(){
                                 loop
                                 muted
                                 playsInline
-                                className="mx-auto w-[50vw] mb-[8vh]"
+                                className="mx-auto w-[70vw] lg:w-[50vw] mb-[6vh] lg:mb-[8vh]"
                             />
                             <video
                                 src={strxxtVideo4}
@@ -65,14 +63,14 @@ export default function Project(){
                                 loop
                                 muted
                                 playsInline
-                                className="mx-auto w-[50vw] mb-[8vh]"
+                                className="mx-auto w-[70vw] lg:w-[50vw] mb-[6vh] lg:mb-[8vh]"
                             />
-                            <div className='mx-[15vw] text-center [font-family:"high1-wonchuri-body",sans-serif] text-[19px]'>
-                                <div className="flex justify-center items-center gap-x-4 mb-8">
-                                    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" className="rounded-lg"/>
-                                    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" className="rounded-lg"/>
-                                    <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" className="rounded-lg"/>
-                                    <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=gsap&logoColor=000" className="rounded-lg"/>
+                            <div className='mx-[8vw] lg:mx-[15vw] text-center [font-family:"high1-wonchuri-body",sans-serif] text-[13px] md:text-[15px] lg:text-[19px]'>
+                                <div className="flex justify-center items-center gap-x-2 md:gap-x-3 lg:gap-x-4 mb-8">
+                                    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" className="rounded-lg h-4 md:h-auto"/>
+                                    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" className="rounded-lg h-4 md:h-auto"/>
+                                    <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" className="rounded-lg h-4 md:h-auto"/>
+                                    <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=gsap&logoColor=000" className="rounded-lg h-4 md:h-auto"/>
                                 </div>
 
                                 <p><span className="underline decoration-wavy decoration-myGreen font-bold">STRXXT</span>는 스트릿 패션 문화를 탐색하고 브랜드, 아이템을 소개하는 반응형 웹 매거진 애플리케이션입니다.</p>
@@ -87,7 +85,16 @@ export default function Project(){
                                         href="https://github.com/seo1a/fashion-magazine"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="w-[6vw] px-5 py-3 rounded-xl bg-indigo-600 text-white text-lg font-bold hover:opacity-80 transition"
+                                        className="
+                                        w-full sm:w-auto
+                                        px-6 py-3
+                                        rounded-xl
+                                        bg-indigo-600 text-white
+                                        text-sm sm:text-base lg:text-lg
+                                        font-bold
+                                        text-center
+                                        hover:opacity-80
+                                        transition"
                                     >
                                         🔗깃허브
                                     </a>
@@ -95,40 +102,46 @@ export default function Project(){
                                         href="https://my-fashion-magazine.vercel.app/"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="w-[6vw] px-5 py-3 rounded-xl bg-myGreen/80 text-black text-lg font-bold hover:opacity-80 transition"
+                                        className="
+                                        w-full sm:w-auto
+                                        px-6 py-3
+                                        rounded-xl
+                                        bg-myGreen/80 text-black
+                                        text-sm sm:text-base lg:text-lg
+                                        font-bold
+                                        text-center
+                                        hover:opacity-80
+                                        transition"
                                     >
                                         🔗배포
                                     </a>
                                 </div>
                             </div>
-
-                            
                         </div>
                     </div>
                 </div>
 
                 <div>
-                    <h1 className='[font-family:"pf-pixelscript",sans-serif] text-5xl text-neutral-700 font-bold mb-[5vh]'>JMT Searcher</h1>
-                    <div className="relative mx-auto w-[65vw] pt-[8vh] pb-[10vh] rounded-4xl overflow-hidden">
-                        
+                    <h1 className='[font-family:"pf-pixelscript",sans-serif] text-3xl md:text-4xl lg:text-5xl text-neutral-700 font-bold mb-[3vh] lg:mb-[5vh]'>JMT Searcher</h1>
+                    <div className="relative mx-auto w-[85vw] lg:w-[65vw] pt-[4vh] lg:pt-[8vh] pb-[8vh] lg:pb-[10vh] rounded-4xl overflow-hidden">
                         <div className="absolute inset-0 bg-white opacity-60"></div>
 
                         <div className="relative z-10">
-                            <img src={jonmatSearcherImg} className="mx-auto w-[50vw] mb-[8vh]" />
+                            <img src={jonmatSearcherImg} className="mx-auto w-[70vw] lg:w-[50vw] mb-[3vh] lg:mb-[8vh]" />
                             <video
                                 src={jonmatSearcherVideo}
                                 autoPlay
                                 loop
                                 muted
                                 playsInline
-                                className="mx-auto w-[50vw] mb-[8vh]"
+                                className="mx-auto w-[70vw] lg:w-[50vw] mb-[6vh] lg:mb-[8vh]"
                             />
-                            <div className='mx-[15vw] text-center [font-family:"high1-wonchuri-body",sans-serif] text-[19px]'>
-                                <div className="flex justify-center items-center gap-x-4 mb-8">
-                                    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" className="rounded-lg"/>
-                                    <img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=orange" className="rounded-lg"/>
-                                    <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" className="rounded-lg"/>
-                                    <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white" className="rounded-lg"/>
+                            <div className='mx-[8vw] lg:mx-[15vw] text-center [font-family:"high1-wonchuri-body",sans-serif] text-[13px] md:text-[15px] lg:text-[19px]'>
+                                <div className="flex justify-center items-center gap-x-2 md:gap-x-3 lg:gap-x-4 mb-8">
+                                    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" className="rounded-lg h-4 md:h-auto"/>
+                                    <img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=orange" className="rounded-lg h-4 md:h-auto"/>
+                                    <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" className="rounded-lg h-4 md:h-auto"/>
+                                    <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white" className="rounded-lg h-4 md:h-auto"/>
                                 </div>
 
                                 <p><span className="underline decoration-wavy decoration-blue-400 font-bold">JMT Searcher</span>은 맛집을 검색하면 리뷰, 사진, 지도 상 위치 정보를 확인할 수 있는 반응형 웹 애플리케이션입니다.</p>
@@ -151,7 +164,16 @@ export default function Project(){
                                         href="https://github.com/seo1a/jonmat-searcher"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="w-[6vw] px-5 py-3 rounded-xl bg-indigo-600 text-white text-lg font-bold hover:opacity-80 transition"
+                                        className="
+                                        w-full sm:w-auto
+                                        px-6 py-3
+                                        rounded-xl
+                                        bg-indigo-600 text-white
+                                        text-sm sm:text-base lg:text-lg
+                                        font-bold
+                                        text-center
+                                        hover:opacity-80
+                                        transition"
                                     >
                                         🔗깃허브
                                     </a>
@@ -159,7 +181,16 @@ export default function Project(){
                                         href="https://jonmat-searcher.vercel.app"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="w-[6vw] px-5 py-3 rounded-xl bg-blue-400 text-white text-lg font-bold hover:opacity-80 transition"
+                                        className="
+                                        w-full sm:w-auto
+                                        px-6 py-3
+                                        rounded-xl
+                                        bg-blue-400 text-white
+                                        text-sm sm:text-base lg:text-lg
+                                        font-bold
+                                        text-center
+                                        hover:opacity-80
+                                        transition"
                                     >
                                         🔗배포
                                     </a>
@@ -170,28 +201,27 @@ export default function Project(){
                 </div>
 
                 <div>
-                    <h1 className='[font-family:"pf-pixelscript",sans-serif] text-5xl text-neutral-700 font-bold mb-[5vh]'>Animal Crossing</h1>
-                    <div className="relative mx-auto w-[65vw] pt-[8vh] pb-[10vh] rounded-4xl overflow-hidden">
-                        
+                    <h1 className='[font-family:"pf-pixelscript",sans-serif] text-3xl md:text-4xl lg:text-5xl text-neutral-700 font-bold mb-[3vh] lg:mb-[5vh]'>Animal Crossing</h1>
+                    <div className="relative mx-auto w-[85vw] lg:w-[65vw] pt-[4vh] lg:pt-[8vh] pb-[8vh] lg:pb-[10vh] rounded-4xl overflow-hidden">
                         <div className="absolute inset-0 bg-white opacity-60"></div>
 
                         <div className="relative z-10">
-                            <img src={animalCrossingImg} className="mx-auto w-[50vw] mb-[8vh]" />
+                            <img src={animalCrossingImg} className="mx-auto w-[70vw] lg:w-[50vw] mb-[3vh] lg:mb-[8vh]" />
                             <video
                                 src={animalCrossingVideo}
                                 autoPlay
                                 loop
                                 muted
                                 playsInline
-                                className="mx-auto w-[50vw] mb-[8vh]"
+                                className="mx-auto w-[70vw] lg:w-[50vw] mb-[6vh] lg:mb-[8vh]"
                             />
-                            <div className='mx-[15vw] text-center [font-family:"high1-wonchuri-body",sans-serif] text-[19px]'>
-                                <div className="flex justify-center items-center gap-x-4 mb-8">
-                                    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" className="rounded-lg"/>
-                                    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" className="rounded-lg"/>
-                                    <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" className="rounded-lg"/>
-                                    <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=gsap&logoColor=000" className="rounded-lg"/>
-                                    <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white" className="rounded-lg"/>
+                            <div className='mx-[8vw] lg:mx-[15vw] text-center [font-family:"high1-wonchuri-body",sans-serif] text-[13px] md:text-[15px] lg:text-[19px]'>
+                                <div className="flex justify-center items-center gap-x-2 md:gap-x-3 lg:gap-x-4 mb-8">
+                                    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" className="rounded-lg h-4 md:h-auto"/>
+                                    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" className="rounded-lg h-4 md:h-auto"/>
+                                    <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" className="rounded-lg h-4 md:h-auto"/>
+                                    <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=gsap&logoColor=000" className="rounded-lg h-4 md:h-auto"/>
+                                    <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white" className="rounded-lg h-4 md:h-auto"/>
                                 </div>
                                 
                                 <p><span className="underline decoration-wavy decoration-emerald-400 font-bold">모아봐요 동물의숲</span>은 게임 동물의숲 이웃의 정보를 확인하고 검색 및 기준에 따른 모아보기를 할 수 있는 반응형 웹 애플리케이션입니다.</p>
@@ -211,7 +241,16 @@ export default function Project(){
                                         href="https://github.com/seo1a/animal-crossing"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="w-[6vw] px-5 py-3 rounded-xl bg-indigo-600 text-white text-lg font-bold hover:opacity-80 transition"
+                                        className="
+                                        w-full sm:w-auto
+                                        px-6 py-3
+                                        rounded-xl
+                                        bg-indigo-600 text-white
+                                        text-sm sm:text-base lg:text-lg
+                                        font-bold
+                                        text-center
+                                        hover:opacity-80
+                                        transition"
                                     >
                                         🔗깃허브
                                     </a>
@@ -219,7 +258,16 @@ export default function Project(){
                                         href="https://animal-crossing-henna.vercel.app/"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="w-[6vw] px-5 py-3 rounded-xl bg-emerald-400 text-white text-lg font-bold hover:opacity-80 transition"
+                                        className="
+                                        w-full sm:w-auto
+                                        px-6 py-3
+                                        rounded-xl
+                                        bg-emerald-400 text-white
+                                        text-sm sm:text-base lg:text-lg
+                                        font-bold
+                                        text-center
+                                        hover:opacity-80
+                                        transition"
                                     >
                                         🔗배포
                                     </a>
@@ -230,27 +278,27 @@ export default function Project(){
                 </div>
 
                 <div>
-                    <h1 className='[font-family:"pf-pixelscript",sans-serif] text-5xl text-neutral-700 font-bold mb-[5vh]'>Movie Project</h1>
-                    <div className="relative mx-auto w-[65vw] pt-[8vh] pb-[10vh] rounded-4xl overflow-hidden">
+                    <h1 className='[font-family:"pf-pixelscript",sans-serif] text-3xl md:text-4xl lg:text-5xl text-neutral-700 font-bold mb-[3vh] lg:mb-[5vh]'>Movie Project</h1>
+                    <div className="relative mx-auto w-[85vw] lg:w-[65vw] pt-[4vh] lg:pt-[8vh] pb-[8vh] lg:pb-[10vh] rounded-4xl overflow-hidden">
                         
                         <div className="absolute inset-0 bg-white opacity-60"></div>
 
                         <div className="relative z-10">
-                            <img src={movieProjectImg} className="mx-auto w-[50vw] mb-[8vh]" />
+                            <img src={movieProjectImg} className="mx-auto  w-[70vw] lg:w-[50vw] mb-[3vh] lg:mb-[8vh]" />
                             <video
                                 src={movieProjectVideo}
                                 autoPlay
                                 loop
                                 muted
                                 playsInline
-                                className="mx-auto w-[50vw] mb-[8vh]"
+                                className="mx-auto w-[70vw] lg:w-[50vw] mb-[6vh] lg:mb-[8vh]"
                             />
-                            <div className='mx-[15vw] text-center [font-family:"high1-wonchuri-body",sans-serif] text-[19px]'>
-                                <div className="flex justify-center items-center gap-x-4 mb-8">
-                                    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" className="rounded-lg"/>
-                                    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" className="rounded-lg"/>
-                                    <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" className="rounded-lg"/>
-                                    <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white" className="rounded-lg"/>
+                            <div className='mx-[8vw] lg:mx-[15vw] text-center [font-family:"high1-wonchuri-body",sans-serif] text-[13px] md:text-[15px] lg:text-[19px]'>
+                                <div className="flex justify-center items-center gap-x-2 md:gap-x-3 lg:gap-x-4 mb-8">
+                                    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" className="rounded-lg h-4 md:h-auto"/>
+                                    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" className="rounded-lg h-4 md:h-auto"/>
+                                    <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" className="rounded-lg h-4 md:h-auto"/>
+                                    <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white" className="rounded-lg h-4 md:h-auto"/>
                                 </div>
                                 
                                 <p><span className="underline decoration-wavy decoration-red-400 font-bold">Movie Project</span>는 현재 상영 중인 영화 목록을 조회·검색·정렬·즐겨찾기할 수 있는 반응형 웹 애플리케이션입니다.</p>
@@ -268,7 +316,16 @@ export default function Project(){
                                         href="https://github.com/seo1a/movie-project-ts"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="w-[6vw] px-5 py-3 rounded-xl bg-indigo-600 text-white text-lg font-bold hover:opacity-80 transition"
+                                        className="
+                                            w-full sm:w-auto
+                                            px-6 py-3
+                                            rounded-xl
+                                            bg-indigo-600 text-white
+                                            text-sm sm:text-base lg:text-lg
+                                            font-bold
+                                            text-center
+                                            hover:opacity-80
+                                            transition"
                                     >
                                         🔗깃허브
                                     </a>
@@ -276,7 +333,16 @@ export default function Project(){
                                         href="https://movie-project-ts-eosin.vercel.app"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="w-[6vw] px-5 py-3 rounded-xl bg-red-400 text-white text-lg font-bold hover:opacity-80 transition"
+                                        className="
+                                            w-full sm:w-auto
+                                            px-6 py-3
+                                            rounded-xl
+                                            bg-red-400 text-white
+                                            text-sm sm:text-base lg:text-lg
+                                            font-bold
+                                            text-center
+                                            hover:opacity-80
+                                            transition"
                                     >
                                         🔗배포
                                     </a>
