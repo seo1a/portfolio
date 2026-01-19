@@ -86,8 +86,8 @@ export default function Project(){
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="
-                                        w-full sm:w-auto
-                                        px-6 py-3
+                                        w-[23vw] lg:w-auto
+                                        lg:px-6 py-3
                                         rounded-xl
                                         bg-indigo-600 text-white
                                         text-sm sm:text-base lg:text-lg
@@ -103,8 +103,8 @@ export default function Project(){
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="
-                                        w-full sm:w-auto
-                                        px-6 py-3
+                                        w-[23vw] lg:w-auto
+                                        lg:px-6 py-3
                                         rounded-xl
                                         bg-myGreen/80 text-black
                                         text-sm sm:text-base lg:text-lg
@@ -164,8 +164,8 @@ export default function Project(){
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="
-                                        w-full sm:w-auto
-                                        px-6 py-3
+                                        w-[23vw] lg:w-auto
+                                        lg:px-6 py-3
                                         rounded-xl
                                         bg-indigo-600 text-white
                                         text-sm sm:text-base lg:text-lg
@@ -181,8 +181,8 @@ export default function Project(){
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="
-                                        w-full sm:w-auto
-                                        px-6 py-3
+                                        w-[23vw] lg:w-auto
+                                        lg:px-6 py-3
                                         rounded-xl
                                         bg-blue-400 text-white
                                         text-sm sm:text-base lg:text-lg
@@ -257,8 +257,8 @@ export default function Project(){
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="
-                                        w-full sm:w-auto
-                                        px-6 py-3
+                                        w-[23vw] lg:w-auto
+                                        lg:px-6 py-3
                                         rounded-xl
                                         bg-indigo-600 text-white
                                         text-sm sm:text-base lg:text-lg
@@ -274,8 +274,8 @@ export default function Project(){
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="
-                                        w-full sm:w-auto
-                                        px-6 py-3
+                                        w-[23vw] lg:w-auto
+                                        lg:px-6 py-3
                                         rounded-xl
                                         bg-emerald-400 text-white
                                         text-sm sm:text-base lg:text-lg
@@ -332,8 +332,8 @@ export default function Project(){
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="
-                                            w-full sm:w-auto
-                                            px-6 py-3
+                                            w-[23vw] lg:w-auto
+                                            lg:px-6 py-3
                                             rounded-xl
                                             bg-indigo-600 text-white
                                             text-sm sm:text-base lg:text-lg
@@ -349,8 +349,8 @@ export default function Project(){
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="
-                                            w-full sm:w-auto
-                                            px-6 py-3
+                                            w-[23vw] lg:w-auto
+                                            lg:px-6 py-3
                                             rounded-xl
                                             bg-red-400 text-white
                                             text-sm sm:text-base lg:text-lg
