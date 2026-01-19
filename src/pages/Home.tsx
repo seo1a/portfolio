@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import backgroundImage from "../assets/background_home2.png";
 import iconImage1_up from "../assets/baby_icon1_up.jpg";

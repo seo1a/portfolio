@@ -1,4 +1,3 @@
-import { useState } from "react";
 import backgroundImage from "../assets/background.png";
 import profileImage from "../assets/profile_image.jpg";
 
