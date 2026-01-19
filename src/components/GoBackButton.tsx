@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import backButton from "../assets/back_button.png"
+import backButton from "../assets/back_button2.png";
 
 export default function FloatingHomeButton() {
   const location = useLocation();
