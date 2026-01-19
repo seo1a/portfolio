@@ -1,1 +1,5 @@
 @import "tailwindcss";
+@theme {
+  --font-sandoll: "sandoll-gothicneo2", sans-serif;
+  --font-wonchuri: "high1-wonchuri-body", sans-serif;
+}
