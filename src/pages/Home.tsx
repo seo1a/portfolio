@@ -44,8 +44,8 @@ export default function Home(){
                 <button
                     className="
                     group
-                    w-48 lg:w-90 h-48 lg:h-90
-                    absolute top-[66%] left-[73%] lg:left-[60.5%]
+                    w-45 lg:w-90 h-45 lg:h-90
+                    absolute top-[66%] left-[74%] lg:left-[60.5%]
                     -translate-x-1/2 -translate-y-1/2 cursor-pointer"
                 >
                     <img src={iconImage2_up}
