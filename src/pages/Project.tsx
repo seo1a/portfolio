@@ -11,7 +11,7 @@ import strxxtVideo3 from "../assets/strxxt-video3_1.mp4";
 import strxxtVideo4 from "../assets/strxxt-video4_1.mp4";
 import animalCrossingVideo from "../assets/animal-crossing-video.mp4";
 import movieProjectVideo from "../assets/movie-video.mp4"
-//import Loading from "./Loading";
+import Loading from "./Loading";
 import { useState } from "react";
 
 export default function Project(){
@@ -27,7 +27,7 @@ export default function Project(){
 
     return(
         <>
-            {/*isLoading && <Loading />*/}
+            {isLoading && <Loading />}
             
             <section
                 className={`min-h-screen ${
