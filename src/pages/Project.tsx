@@ -17,7 +17,7 @@ import { useState } from "react";
 export default function Project(){
     const [loadedCount, setLoadedCount] = useState(0);
 
-    const TOTAL_MEDIA = 5;
+    const TOTAL_MEDIA = 4;  // 모바일 브라우저의 autoplay 정책으로 video 제외 
 
     const handleLoaded = () => {
         setLoadedCount(prev => prev + 1);
@@ -53,7 +53,6 @@ export default function Project(){
                                 <video
                                     src={strxxtVideo1}
                                     preload="metadata"
-                                    onLoadedData={handleLoaded}
                                     autoPlay
                                     loop
                                     muted
@@ -63,7 +62,6 @@ export default function Project(){
                                 <video
                                     src={strxxtVideo2}
                                     preload="metadata"
-                                    onLoadedData={handleLoaded}
                                     autoPlay
                                     loop
                                     muted
@@ -73,7 +71,6 @@ export default function Project(){
                                 <video
                                     src={strxxtVideo3}
                                     preload="metadata"
-                                    onLoadedData={handleLoaded}
                                     autoPlay
                                     loop
                                     muted
@@ -83,7 +80,6 @@ export default function Project(){
                                 <video
                                     src={strxxtVideo4}
                                     preload="metadata"
-                                    onLoadedData={handleLoaded}
                                     autoPlay
                                     loop
                                     muted
@@ -156,7 +152,6 @@ export default function Project(){
                                 <video
                                     src={jonmatSearcherVideo}
                                     preload="metadata"
-                                    onLoadedData={handleLoaded}
                                     autoPlay
                                     loop
                                     muted
@@ -236,7 +231,6 @@ export default function Project(){
                                 <video
                                     src={animalCrossingVideo}
                                     preload="metadata"
-                                    onLoadedData={handleLoaded}
                                     autoPlay
                                     loop
                                     muted
@@ -332,7 +326,6 @@ export default function Project(){
                                 <video
                                     src={movieProjectVideo}
                                     preload="metadata"
-                                    onLoadedData={handleLoaded}
                                     autoPlay
                                     loop
                                     muted
