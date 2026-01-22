@@ -52,7 +52,6 @@ export default function Project(){
                                 <img src={strxxtImg} onLoad={handleLoaded} className="mx-auto w-[70vw] lg:w-[50vw] mb-[3vh] lg:mb-[8vh]" />
                                 <video
                                     src={strxxtVideo1}
-                                    preload="metadata"
                                     autoPlay
                                     loop
                                     muted
@@ -61,7 +60,6 @@ export default function Project(){
                                 />
                                 <video
                                     src={strxxtVideo2}
-                                    preload="metadata"
                                     autoPlay
                                     loop
                                     muted
@@ -70,7 +68,6 @@ export default function Project(){
                                 />
                                 <video
                                     src={strxxtVideo3}
-                                    preload="metadata"
                                     autoPlay
                                     loop
                                     muted
@@ -79,7 +76,6 @@ export default function Project(){
                                 />
                                 <video
                                     src={strxxtVideo4}
-                                    preload="metadata"
                                     autoPlay
                                     loop
                                     muted
@@ -151,7 +147,6 @@ export default function Project(){
                                 <img src={jonmatSearcherImg} onLoad={handleLoaded} className="mx-auto w-[70vw] lg:w-[50vw] mb-[3vh] lg:mb-[8vh]" />
                                 <video
                                     src={jonmatSearcherVideo}
-                                    preload="metadata"
                                     autoPlay
                                     loop
                                     muted
@@ -230,7 +225,6 @@ export default function Project(){
                                 <img src={animalCrossingImg} onLoad={handleLoaded} className="mx-auto w-[70vw] lg:w-[50vw] mb-[3vh] lg:mb-[8vh]" />
                                 <video
                                     src={animalCrossingVideo}
-                                    preload="metadata"
                                     autoPlay
                                     loop
                                     muted
@@ -325,7 +319,6 @@ export default function Project(){
                                 <img src={movieProjectImg} onLoad={handleLoaded} className="mx-auto w-[70vw] lg:w-[50vw] mb-[3vh] lg:mb-[8vh]" />
                                 <video
                                     src={movieProjectVideo}
-                                    preload="metadata"
                                     autoPlay
                                     loop
                                     muted
