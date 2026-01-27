@@ -39,12 +39,11 @@ export default function Project(){
                 }}
                 >
                 {/* <h1 className="text-6xl text-center mb-[15vh]">Project</h1> */}
-                <img src={projectLogo} className="mx-auto w-[50vw] lg:w-[20vw] h-auto mb-[10vh] lg:mb-[15vh]"
-                />
+                <img src={projectLogo} className="mx-auto w-[50vw] lg:w-[20vw] h-auto mb-[10vh] lg:mb-[15vh]" />
 
                 <div className="flex flex-col gap-[15vh] lg:gap-[25vh] text-center">
                     <div>
-                        <h1 className='[font-family:"pf-pixelscript",sans-serif] text-3xl md:text-4xl lg:text-5xl text-neutral-700 font-bold mb-[3vh] lg:mb-[5vh]'>STRXXT</h1>
+                        <h1 className='[font-family:"pf-pixelscript",sans-serif] text-2xl md:text-4xl lg:text-5xl text-neutral-700 font-bold mb-[3vh] lg:mb-[5vh]'>STRXXT</h1>
                         <div className="relative mx-auto w-[85vw] lg:w-[65vw] pt-[4vh] lg:pt-[8vh] pb-[8vh] lg:pb-[10vh] rounded-4xl overflow-hidden">
                             <div className="absolute inset-0 bg-white opacity-60"></div>
 
@@ -139,7 +138,7 @@ export default function Project(){
                     </div>
 
                     <div>
-                        <h1 className='[font-family:"pf-pixelscript",sans-serif] text-3xl md:text-4xl lg:text-6xl text-neutral-700 font-bold mb-[3vh] lg:mb-[5vh]'>JMT Searcher</h1>
+                        <h1 className='[font-family:"pf-pixelscript",sans-serif] text-2xl md:text-4xl lg:text-6xl text-neutral-700 font-bold mb-[3vh] lg:mb-[5vh]'>JMT Searcher</h1>
                         <div className="relative mx-auto w-[85vw] lg:w-[65vw] pt-[4vh] lg:pt-[8vh] pb-[8vh] lg:pb-[10vh] rounded-4xl overflow-hidden">
                             <div className="absolute inset-0 bg-white opacity-60"></div>
 
@@ -217,7 +216,7 @@ export default function Project(){
                     </div>
 
                     <div>
-                        <h1 className='[font-family:"pf-pixelscript",sans-serif] text-3xl md:text-4xl lg:text-6xl text-neutral-700 font-bold mb-[3vh] lg:mb-[5vh]'>Animal Crossing</h1>
+                        <h1 className='[font-family:"pf-pixelscript",sans-serif] text-2xl md:text-4xl lg:text-6xl text-neutral-700 font-bold mb-[3vh] lg:mb-[5vh]'>Animal Crossing</h1>
                         <div className="relative mx-auto w-[85vw] lg:w-[65vw] pt-[4vh] lg:pt-[8vh] pb-[8vh] lg:pb-[10vh] rounded-4xl overflow-hidden">
                             <div className="absolute inset-0 bg-white opacity-60"></div>
 
@@ -310,7 +309,7 @@ export default function Project(){
                     </div>
 
                     <div>
-                        <h1 className='[font-family:"pf-pixelscript",sans-serif] text-3xl md:text-4xl lg:text-6xl text-neutral-700 font-bold mb-[3vh] lg:mb-[5vh]'>Movie Project</h1>
+                        <h1 className='[font-family:"pf-pixelscript",sans-serif] text-2xl md:text-4xl lg:text-6xl text-neutral-700 font-bold mb-[3vh] lg:mb-[5vh]'>Movie Project</h1>
                         <div className="relative mx-auto w-[85vw] lg:w-[65vw] pt-[4vh] lg:pt-[8vh] pb-[8vh] lg:pb-[10vh] rounded-4xl overflow-hidden">
                             
                             <div className="absolute inset-0 bg-white opacity-60"></div>

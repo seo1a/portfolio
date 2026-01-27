@@ -4,6 +4,7 @@ import './App.css'
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Project from "./pages/Project";
+import ProjectTest from "./pages/ProjectTest";
 import GoBackButton from "./components/GoBackButton"
 
 //import Loading from "./pages/Loading";
@@ -21,27 +22,15 @@ export default function App() {
         <Routes>
           <Route 
             path="/" 
-            element={
-
-                <Home />
-
-            } 
+            element={<Home />} 
           />
           <Route 
             path="/aboutme" 
-            element={
-
-                <AboutMe />
-
-            } 
+            element={<AboutMe />} 
           />
           <Route 
             path="/project" 
-            element={
-
-                <Project />
-
-            } 
+            element={<ProjectTest />} 
           />
         </Routes>
 
