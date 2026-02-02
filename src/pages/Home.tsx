@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import backgroundImage from "../assets/background_home5.png";
-import iconImage1_up from "../assets/baby_icon1_up.jpg";
-import iconImage2_up from "../assets/baby_icon2_up.jpg";
-import iconImage1_down from "../assets/baby_icon1_down2.jpg";
-import iconImage2_down from "../assets/baby_icon2_down.jpg";
+import iconImage1_up from "../assets/baby_icon2_up.png";
+import iconImage2_up from "../assets/baby_icon1_up.png";
+import iconImage1_down from "../assets/baby_icon2_down.png";
+import iconImage2_down from "../assets/baby_icon1_down.png";
 
 export default function Home(){
     return(
@@ -15,7 +15,7 @@ export default function Home(){
                 <button
                 className="
                     group
-                    w-44 lg:w-82 h-44 lg:h-82
+                    w-44 lg:w-90 h-44 lg:h-90
                     absolute top-[70%] lg:top-[66%] left-[30%] lg:left-[40%]
                     -translate-x-1/2 -translate-y-1/2 cursor-pointer"
                 >

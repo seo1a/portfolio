@@ -15,7 +15,7 @@ export default function Footer() {
             <img
                 src={githubButton}
                 alt="GitHub"
-                className="w-10 h-10 lg:w-12 lg:h-12"
+                className="w-10 h-10 lg:w-10 lg:h-10"
             />
         </a>
 
@@ -27,7 +27,7 @@ export default function Footer() {
             <img
                 src={emailButton}
                 alt="Email"
-                className="w-10 h-10 lg:w-12 lg:h-12"
+                className="w-10 h-10 lg:w-10 lg:h-10"
             />
         </a>
       </div>
