@@ -14,6 +14,7 @@ import movieProjectVideo from "../assets/movie-video.mp4"
 import Loading from "./Loading";
 import { useState } from "react";
 import ProjectSection from "../components/ProjectSection";
+import Footer from "../components/Footer";
 
 export default function Project(){
     const [loadedCount, setLoadedCount] = useState(0);
@@ -33,7 +34,7 @@ export default function Project(){
             <section
                 className={`min-h-screen ${
                             isLoading ? "opacity-0 pointer-events-none" : "opacity-100"
-                            } transition-opacity duration-500 bg-top bg-repeat-y pt-[10vh] pb-[25vh]`} 
+                            } transition-opacity duration-500 bg-top bg-repeat-y pt-[10vh] pb-[10vh]`} 
                 style={{
                     backgroundImage: `url(${backgroundImage})`,
                     backgroundSize: "100% auto",
@@ -174,6 +175,8 @@ export default function Project(){
                         <p><span className="underline decoration-wavy decoration-red-400 font-bold">반응형 디자인</span>을 제공합니다.</p>
                     </ProjectSection>     
                 </div>
+
+                <Footer/>
             </section>
         </>
     );

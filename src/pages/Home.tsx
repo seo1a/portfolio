@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import backgroundImage from "../assets/background_home2.png";
+import backgroundImage from "../assets/background_home5.png";
 import iconImage1_up from "../assets/baby_icon1_up.jpg";
 import iconImage2_up from "../assets/baby_icon2_up.jpg";
 import iconImage1_down from "../assets/baby_icon1_down2.jpg";
@@ -43,7 +43,7 @@ export default function Home(){
                     className="
                     group
                     w-45 lg:w-90 h-45 lg:h-90
-                    absolute top-[70%] lg:top-[66%] left-[74%] lg:left-[60.5%]
+                    absolute top-[70%] lg:top-[66%] left-[78%] lg:left-[60.5%]
                     -translate-x-1/2 -translate-y-1/2 cursor-pointer"
                 >
                     <img src={iconImage2_up}
