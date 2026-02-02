@@ -5,9 +5,7 @@ import iconImage2_up from "../assets/baby_icon2_up.jpg";
 import iconImage1_down from "../assets/baby_icon1_down2.jpg";
 import iconImage2_down from "../assets/baby_icon2_down.jpg";
 
-
 export default function Home(){
-    
     return(
         <section 
             className="min-h-screen bg-cover bg-center bg-no-repeat" 

@@ -1,19 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css'
-//import { Suspense, lazy } from 'react';
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Project from "./pages/Project";
-import ProjectTest from "./pages/ProjectTest";
 import GoBackButton from "./components/GoBackButton"
-
-//import Loading from "./pages/Loading";
-
-/*
-const Home = lazy(() => import('./pages/Home'));
-const AboutMe = lazy(() => import('./pages/AboutMe'));
-const Project = lazy(() => import('./pages/Project'));
-*/
 
 export default function App() {
 
@@ -30,7 +20,7 @@ export default function App() {
           />
           <Route 
             path="/project" 
-            element={<ProjectTest />} 
+            element={<Project />} 
           />
         </Routes>
 
