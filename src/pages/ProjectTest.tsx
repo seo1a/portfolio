@@ -58,12 +58,24 @@ export default function ProjectTest(){
                         projectColor="strxxt"
                         onMediaLoad={handleLoaded}
                     >
-                        <p><span className="underline decoration-wavy decoration-myGreen font-bold">STRXXT</span>는 스트릿 패션 문화를 탐색하고 브랜드, 아이템을 소개하는 반응형 웹 매거진 애플리케이션입니다.</p>
-                        <p>본 프로젝트는 그동안 학습한 프론트엔드 개발 전반의 기능과 표현 기법을 하나의 프로젝트에 종합적으로 적용해보기 위해 진행하였습니다. 패션을 주제로 한 소개형 웹페이지로, 적절한 외부 API가 존재하지 않아 직접 콘텐츠 소스를 수집하고 JSON 형식의 데이터로 구조화하여 사용했습니다.</p>
+                        <p><span className="underline decoration-wavy decoration-myGreen/80 font-bold">STRXXT</span>은 스트릿 패션 문화를 탐색하고 브랜드, 아이템을 소개하는 반응형 웹 매거진 애플리케이션입니다.
+                        ScrollTrigger과 GSAP 애니메이션을 활용한 시각적 흐름과 사용자 경험 설계에 집중했습니다.</p>
 
-                        <p>본 프로젝트에서는 <span className="underline decoration-wavy decoration-myGreen font-bold">스크롤</span>과 <span className="underline decoration-wavy decoration-myGreen font-bold">GSAP 애니메이션</span>을 활용한 시각적 흐름과 사용자 경험 설계에 보다 집중했습니다. 설명 텍스트가 스크롤에 따라 동적으로 등장하는 효과, 가로 스크롤 기반 섹션 구성, 스크롤이 최하단에 도달하면 다음 페이지로 자연스럽게 전환되는 인터랙션 등을 구현하여, 사용자가 콘텐츠를 ‘읽는 것’보다 ‘경험하며’ 탐색할 수 있도록 구성했습니다.</p>
+                        <p><span className="font-bold">Home</span> 페이지는 스트릿 패션의 문화와 배경을 소개하는 도입부로,
+                        <span className="underline decoration-wavy decoration-myGreen/80 font-bold">스크롤에 따라</span> 이미지와 텍스트가 동적으로 등장하는 애니메이션을 적용했습니다.</p>
 
-                        <p>프로젝트의 성격에 따라 기능 우선순위와 UX 설계 방향이 달라져야 함을 체감하고 정리하는 계기가 된 프로젝트였습니다.</p>
+                        <p><span className="font-bold">Brand</span> 페이지는 GSAP ScrollTrigger를 활용한 <span className="underline decoration-wavy decoration-myGreen/80 font-bold">가로 스크롤 기반 섹션</span>으로 구성해
+                        매거진을 읽는 듯한 탐색 경험을 제공하며, <span className="underline decoration-wavy decoration-myGreen/80 font-bold">네비게이션</span>을 통해 원하는 브랜드로
+                        즉시 이동할 수 있도록 설계했습니다.</p>
+
+                        <p>Home 페이지와 Brand 페이지는 스크롤 흐름을 하나의 인터랙션으로 활용해,
+                        <span className="underline decoration-wavy decoration-myGreen/80 font-bold">최하단 도달 시 다음 페이지로 자연스럽게 전환</span>되도록 구현했습니다.</p>
+
+                        <p><span className="font-bold">Item</span> 페이지는 <span className="underline decoration-wavy decoration-myGreen/80 font-bold">Swiper</span>를 사용해 쇼핑몰 형태의 인터페이스로
+                        최근 스트릿 패션 인기 아이템을 확인할 수 있도록 구성했습니다.</p>
+
+                        <p><span className="font-bold">Snap</span> 페이지는 스트릿 패션 스냅 이미지 아카이브로,
+                        이미지 확대 및 출처 링크 이동 기능을 제공합니다.</p>
                     </ProjectSection>
                                    
                     <ProjectSection
@@ -81,19 +93,29 @@ export default function ProjectTest(){
                         projectColor="jmt"
                         onMediaLoad={handleLoaded}
                     >
-                        <p><span className="underline decoration-wavy decoration-blue-400 font-bold">JMT Searcher</span>은 맛집을 검색하면 리뷰, 사진, 지도 상 위치 정보를 확인할 수 있는 반응형 웹 애플리케이션입니다.</p>
-                        <p>네이버 블로그, 구글 플레이스, 카카오맵 총 <span className="underline decoration-wavy decoration-blue-400 font-bold">3가지 플랫폼의 리뷰와 사진</span>을 확인하고 비교할 수 있습니다.</p>
+                        <h3 className="text-lg sm:text-xl font-bold mb-4 text-gray-900">
+                            지도 기반으로 여러 플랫폼의 리뷰를 한 번에 비교할 수 있는 맛집 검색 웹 앱
+                        </h3>
 
-                        <p>맛집 검색기를 만들게 된 이유는 내가 직접 쓰고 싶은 웹서비스를 만들어보고 싶다는 생각에서였습니다.</p>
-                        <p>꽤 오래 전 기획했고 Vanilla JS를 사용해 구현했던 첫 프로젝트였습니다.</p>
-                        <p>그 당시 기술적으로 아쉬운 점이 상당히 많은 채로 끝마쳤던 프로젝트였는데, 이번에는 리액트, 자바스크립트 및 여러 다른 기술 스택을 사용해 다시 구현해보았습니다.</p>
+                       
+                        <p>검색창을 통해 위치 정보 입력 및 오픈 지도 표시</p>
+                        <p>검색 시 <span className="underline decoration-wavy decoration-blue-400 font-bold">자동완성</span> 기능 제공</p>
+                        <p><span className="underline decoration-wavy decoration-blue-400 font-bold">카카오맵 API</span>를 활용한 지도 상 위치 표시</p>
+                        <p>네이버, 구글 플랫폼 리뷰 통합 (Naver 검색, Google Places API 사용).</p>
+                        <p>플랫폼 선택 시 리뷰와 사진 표시</p>
+                        <p><span className="underline decoration-wavy decoration-blue-400 font-bold">반응형 디자인</span> 제공</p>
 
-                        <p>맛집 검색을 위해 여러 플랫폼을 일일이 방문하는 번거로움을 없애고,</p>
-                        <p>3가지 플랫폼의 리뷰를 빠르게 비교할 수 있게 하기 위함을 첫번째 목표로 설정했습니다.</p>
-                        <p>검색창에 맛집 이름을 검색하면 후기와 장소가 표시될 것임을 별도의 설명 없이도 알 수 있도록 구현하고 싶었습니다.</p>
-                        <p>따라서 누구나 쉽게 쓸 수 있도록 직관적인 <span className="underline decoration-wavy decoration-blue-400 font-bold">싱글 페이지 UI</span>를 설계했으며, 모바일 최적화도 함께 고려했습니다.</p>
-                        <p>맛집의 위치를 표시할 지도 api로는 네이버 지도 api의 search place 기능이 운영 종료된 관계로, 장소 검색 라이브러리가 제공되는 카카오맵 api를 선택했습니다.</p>
-                        <p>사용자가 직접 맛집을 검색하고, 여러 플랫폼의 사진과 리뷰를 빠르게 비교하며 결정할 수 있는 경험을 만드는 것이 본 프로젝트의 핵심 목표입니다.</p>              
+
+                        <p><span className="underline decoration-wavy decoration-blue-400 font-bold">JMT Searcher</span>는 맛집을 검색하면 지도 상 위치 정보와 여러 플랫폼의 리뷰 및 사진을 한 화면에서 확인할 수 있는 반응형 웹 애플리케이션입니다.</p>
+
+                        <p>상단 검색창을 통해 식당 및 카페를 <span className="underline decoration-wavy decoration-blue-400 font-bold">검색</span>할 수 있으며, <span className="underline decoration-wavy decoration-blue-400 font-bold">자동완성 드롭다운</span>을 제공해 보다 빠르고 정확한 검색이 가능하도록 구현했습니다.</p>
+
+                        <p>검색이 완료되면 카카오맵 API를 활용해 <span className="underline decoration-wavy decoration-blue-400 font-bold">식당의 위치를 지도에 표시</span>하고, 플랫폼 버튼을 통해 <span className="underline decoration-wavy decoration-blue-400 font-bold">네이버와 구글 리뷰 및 사진을 조회</span>할 수 있습니다.</p>
+                        <p>네이버 리뷰는 네이버 검색 API의 블로그·이미지 API를, 구글 리뷰는 Google Places API의 리뷰, 사진, 별점 데이터를 활용했습니다.</p>
+
+                        <p>플랫폼 선택 시 화면 우측에는 <span className="underline decoration-wavy decoration-blue-400 font-bold">리뷰 목록</span>이, 하단에는 <span className="underline decoration-wavy decoration-blue-400 font-bold">관련 사진</span>이 표시되도록 레이아웃을 구성했으며, 리뷰 클릭 시 원본 게시글로 이동하고 사진은 클릭 시 확대해 확인할 수 있습니다.</p>
+
+                        <p>카카오맵 리뷰의 경우 정책 변경으로 인해 기존 텍스트 리뷰 수집 방식이 불가능해졌으며, 이에 따라 <span className="underline decoration-wavy decoration-blue-400 font-bold">카카오맵 리뷰 페이지로 직접 이동</span>할 수 있는 방식으로 기능을 수정해 대응했습니다.</p>
                     </ProjectSection>            
 
                     <ProjectSection

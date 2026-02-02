@@ -31,7 +31,7 @@ export default function ProjectSection({
             <h1 className='[font-family:"pf-pixelscript",sans-serif] text-2xl md:text-4xl lg:text-5xl text-neutral-700 font-bold mb-[3vh] lg:mb-[5vh]'>
                 {title}
             </h1>
-            <div className="relative mx-auto w-[85vw] lg:w-[65vw] pt-[4vh] lg:pt-[8vh] pb-[8vh] lg:pb-[10vh] rounded-4xl overflow-hidden">
+            <div className="relative mx-auto w-[85vw] lg:w-[65vw] pt-[4vh] lg:pt-[8vh] pb-[5vh] lg:pb-[10vh] rounded-4xl overflow-hidden">
                 <div className="absolute inset-0 bg-white opacity-60"></div>
 
                 <div className="relative z-10 mb-[3hv] lg:mb-[0vh]">
@@ -41,13 +41,13 @@ export default function ProjectSection({
                         onLoad={onMediaLoad}
                     />
                     
-                    <div className='mx-[8vw] lg:mx-[15vw] text-center [font-family:"high1-wonchuri-body",sans-serif] text-[13px] md:text-[15px] lg:text-[19px]'>
+                    <div className='mx-[8vw] lg:mx-[15vw] text-center [font-family:"high1-wonchuri-body",sans-serif] text-[13px] md:text-[15px] lg:text-[19px] text-gray-900'>
                         <ProectBadges
                             badges={badges}
                         />
-
-                        {children}
-
+                            <div className="space-y-2 lg:space-y-4 leading-relaxed">
+                                {children}
+                            </div>
                         <ProjectLinks 
                             githubUrl={githubUrl}
                             deployUrl={deployUrl}
