@@ -8,7 +8,8 @@ import GoBackButton from "./components/GoBackButton"
 export default function App() {
 
   return (
-    <Router>
+    <>
+      <Router>
         <Routes>
           <Route 
             path="/" 
@@ -25,8 +26,8 @@ export default function App() {
         </Routes>
 
         <GoBackButton />
-    </Router>
-
+      </Router>
+    </>
   )
 }
 
