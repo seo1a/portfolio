@@ -10,6 +10,8 @@ export default {
         wonchuri: ['"high1-wonchuri-body"', 'sans-serif'],
         pixel: ['"pf-pixelscript"', 'sans-serif'],
         pixel2: ['"argent-pixel-cf"', 'sans-serif'],
+        stack: ['"stack-fill"', 'sans-serif'],
+        stackBricks: ['"stack-bricks"', 'sans-serif'],
       },
     },
   },

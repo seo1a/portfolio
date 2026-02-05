@@ -8,7 +8,7 @@ export default function AboutMe(){
             className="min-h-screen bg-cover bg-center bg-no-repeat pt-[15vh] pb-[10vh]" 
             style={{ backgroundImage: `url(${backgroundImage})` }} 
         > 
-            <h1 className='[font-family:"pf-pixelscript",sans-serif] text-4xl lg:text-5xl text-neutral-700 text-center font-bold mb-[2vh] lg:mb-[8vh]'>About Me</h1> 
+            <h1 className='[font-family:"pf-pixelscript",sans-serif] text-4xl lg:text-5xl text-neutral-700 text-center font-bold mb-[2vh] lg:mb-[6vh]'>About Me</h1> 
             <div className="relative mx-auto w-[85vw] lg:w-[45vw] mt-[3vh] pt-[4vh] lg:pt-[5vh] pb-[10vh] rounded-4xl overflow-hidden">
                 <div className="absolute inset-0 bg-white opacity-60"></div>
 

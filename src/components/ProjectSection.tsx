@@ -27,11 +27,11 @@ export default function ProjectSection({
     onMediaLoad,
 }: ProjectSectionProps) {
     return(
-        <div>
+        <div className="relative z-20">
             <h1 className='[font-family:"pf-pixelscript",sans-serif] text-2xl md:text-4xl lg:text-5xl text-neutral-700 font-bold mb-[3vh] lg:mb-[5vh]'>
                 {title}
             </h1>
-            <div className="relative mx-auto w-[85vw] lg:w-[65vw] pt-[4vh] lg:pt-[8vh] pb-[5vh] lg:pb-[10vh] rounded-4xl overflow-hidden">
+            <div className="relative mx-auto w-[85vw] lg:w-[65vw] pt-[4vh] lg:pt-[8vh] pb-[5vh] lg:pb-[10vh] rounded-4xl overflow-hidden z-20">
                 <div className="absolute inset-0 bg-white opacity-60"></div>
 
                 <div className="relative z-10 mb-[3hv] lg:mb-[0vh]">

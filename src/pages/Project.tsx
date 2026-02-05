@@ -15,7 +15,6 @@ import Loading from "./Loading";
 import { useState } from "react";
 import ProjectSection from "../components/ProjectSection";
 import Footer from "../components/Footer";
-import SnowEffect from "../components/SnowEffect";
 
 export default function Project(){
     const [loadedCount, setLoadedCount] = useState(0);
@@ -35,18 +34,16 @@ export default function Project(){
             <section
                 className={`min-h-screen ${
                             isLoading ? "opacity-0 pointer-events-none" : "opacity-100"
-                            } transition-opacity duration-500 bg-top bg-repeat-y pt-[10vh] pb-[10vh] overflow-hidden`} 
+                            } transition-opacity duration-500 bg-top bg-repeat-y pt-[10vh] pb-[10vh]`} 
                 style={{
                     backgroundImage: `url(${backgroundImage})`,
                     backgroundSize: "100% auto",
                 }}
                 >
-
-                <SnowEffect />
                 {/* <h1 className="text-6xl text-center mb-[15vh]">Project</h1> */}
                 <img src={projectLogo} className="mx-auto w-[50vw] lg:w-[20vw] h-auto mb-[10vh] lg:mb-[15vh]" />
 
-                <div className="flex flex-col gap-[15vh] lg:gap-[25vh] text-center z-10">
+                <div className="flex flex-col gap-[15vh] lg:gap-[25vh] text-center">
                     <ProjectSection
                         title="STRXXT"
                         image={strxxtImg}
@@ -147,7 +144,7 @@ export default function Project(){
                     </ProjectSection>     
                
                     <ProjectSection
-                        title="Movie Projet"
+                        title="Movie Project"
                         image={movieProjectImg}
                         videos={[movieProjectVideo]}
                         badges={[

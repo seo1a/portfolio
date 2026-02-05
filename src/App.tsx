@@ -4,11 +4,13 @@ import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Project from "./pages/Project";
 import GoBackButton from "./components/GoBackButton"
+import SnowEffect from "./components/SnowEffect";
 
 export default function App() {
 
   return (
     <>
+      <SnowEffect/>
       <Router>
         <Routes>
           <Route 
