@@ -34,7 +34,7 @@ export default function Home(){
                         className="
                             absolute right-[87%]
                             top-[23%] -translate-y-1/2
-                            w-32 lg:w-36 h-auto
+                            w-32 lg:w-40 h-auto
                             opacity-0 group-hover:opacity-100
                             transition-opacity duration-300
                             pointer-events-none"
@@ -60,7 +60,7 @@ export default function Home(){
             </Link>
             
             <Link to={`/project`}>
-                <div className="group absolute top-[70%] lg:top-[66%] left-[78%] lg:left-[60.5%] -translate-x-1/2 -translate-y-1/2 z-20">
+                <div className="group absolute top-[70%] lg:top-[66%] left-[75%] lg:left-[60.5%] -translate-x-1/2 -translate-y-1/2 z-20">
                     <img 
                         src={imessage_project}
                         className="

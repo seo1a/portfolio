@@ -1,5 +1,3 @@
-import backgroundImage from "../assets/background.png";
-
 export default function Loading() {
   return (
     <section 
