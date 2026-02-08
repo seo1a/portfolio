@@ -28,7 +28,7 @@ export default function Home(){
         > 
             <div className="absolute inset-0 bg-white opacity-25 z-0"></div>
             <Link to={`/aboutme`}>
-                <div className="group absolute top-[70%] lg:top-[66%] left-[30%] lg:left-[40%] -translate-x-1/2 -translate-y-1/2 z-20">
+                <div className="group absolute top-[66%] lg:top-[66%] left-[30%] lg:left-[40%] -translate-x-1/2 -translate-y-1/2 z-20">
                     <img 
                         src={imessage_aboutme}
                         className="
@@ -60,7 +60,7 @@ export default function Home(){
             </Link>
             
             <Link to={`/project`}>
-                <div className="group absolute top-[70%] lg:top-[66%] left-[75%] lg:left-[60.5%] -translate-x-1/2 -translate-y-1/2 z-20">
+                <div className="group absolute top-[66%] lg:top-[66%] left-[75%] lg:left-[60.5%] -translate-x-1/2 -translate-y-1/2 z-20">
                     <img 
                         src={imessage_project}
                         className="
