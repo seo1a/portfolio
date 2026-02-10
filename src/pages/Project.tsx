@@ -152,7 +152,7 @@ export default function Project(){
                             "https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white",
                             "https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white",
                             "https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white",
-                            "https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white"
+                            "https://img.shields.io/badge/LocalStorage-FFA500?style=for-the-badge"
                         ]}
                         githubUrl="https://github.com/seo1a/movie-projct-nextjs"
                         deployUrl="https://movie-project-nextjs-five.vercel.app/"
