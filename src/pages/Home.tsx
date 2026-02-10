@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import backgroundImage from "../assets/background_home5.png";
 import iconImage1_up from "../assets/baby_icon2_up.png";
 import iconImage2_up from "../assets/baby_icon1_up.png";
@@ -7,28 +7,61 @@ import iconImage1_down from "../assets/baby_icon2_down.png";
 import iconImage2_down from "../assets/baby_icon1_down.png";
 import imessage_aboutme from "../assets/imessage1.png";
 import imessage_project from "../assets/imessage2.png"
+import Loading from "./Loading";
 
-const preloadImages = () => {
-    const images = [iconImage1_up, iconImage1_down, iconImage2_up, iconImage2_down, imessage_aboutme];
+const preloadImages = (onComplete: () => void) => {
+    const images = [
+        backgroundImage,
+        iconImage1_up, 
+        iconImage1_down, 
+        iconImage2_up, 
+        iconImage2_down, 
+        imessage_aboutme,
+        imessage_project
+    ];
+    
+    let loadedCount = 0;
+    const totalImages = images.length;
+
     images.forEach((src) => {
         const img = new Image();
+        img.onload = () => {
+            loadedCount++;
+            if (loadedCount === totalImages) {
+                onComplete();
+            }
+        };
+        img.onerror = () => {
+            loadedCount++;
+            if (loadedCount === totalImages) {
+                onComplete();
+            }
+        };
         img.src = src;
     });
 };
 
 export default function Home(){
+    const [isLoading, setIsLoading] = useState(true);
+
     useEffect(() => {
-        preloadImages();
+        preloadImages(() => {
+            setIsLoading(false);
+        });
     }, []);
+
+    if (isLoading) {
+        return <Loading />;
+    }
 
     return( 
         <section 
             className="min-h-screen bg-cover bg-center bg-no-repeat relative" 
             style={{ backgroundImage: `url(${backgroundImage})` }} 
         > 
-            <div className="absolute inset-0 bg-white opacity-25 z-0"></div>
+            <div className="absolute inset-0 bg-white opacity-0 z-0"></div>
             <Link to={`/aboutme`}>
-                <div className="group absolute top-[66%] lg:top-[66%] left-[30%] lg:left-[40%] -translate-x-1/2 -translate-y-1/2 z-20">
+                <div className="group absolute top-[60%] lg:top-[66%] left-[28%] lg:left-[40%] -translate-x-1/2 -translate-y-1/2 z-20">
                     <img 
                         src={imessage_aboutme}
                         className="
@@ -38,7 +71,7 @@ export default function Home(){
                             opacity-0 group-hover:opacity-100
                             transition-opacity duration-300
                             pointer-events-none"
-                        alt="About Me Message"
+                        alt="About Me image"
                     />
                     <button
                         className="
@@ -60,7 +93,7 @@ export default function Home(){
             </Link>
             
             <Link to={`/project`}>
-                <div className="group absolute top-[66%] lg:top-[66%] left-[75%] lg:left-[60.5%] -translate-x-1/2 -translate-y-1/2 z-20">
+                <div className="group absolute top-[60%] lg:top-[66%] left-[72%] lg:left-[60.5%] -translate-x-1/2 -translate-y-1/2 z-20">
                     <img 
                         src={imessage_project}
                         className="

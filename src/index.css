@@ -1,4 +1,12 @@
 @import "tailwindcss";
+@font-face {
+  font-family: "olive-citrus";
+  src: url("/olive-citrus.ttf") format("truetype");
+}
+@font-face {
+  font-family: "solenoidal";
+  src: url("/Solenoidal.ttf") format("truetype");
+}
 @theme {
   --font-sandoll: "sandoll-gothicneo2", sans-serif;
   --font-wonchuri: "high1-wonchuri-body", sans-serif;
@@ -6,6 +14,9 @@
   --font-pixel2: "argent-pixel-cf", sans-serif;
   --font-stack: "stack-fill", sans-serif;
   --font-stackBricks: "stack-bricks", sans-serif;
+  --font-oliveCitrus: "olive-citrus", sans-serif;
+  --font-solenoidal: "solenoidal", sans-serif;
 
   --color-myGreen: #00ff57;
+  --color-myBlack: #191919;
 }

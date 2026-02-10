@@ -150,11 +150,12 @@ export default function Project(){
                         badges={[
                             "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
                             "https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white",
+                            "https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white",
                             "https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white",
                             "https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white"
                         ]}
-                        githubUrl="https://github.com/seo1a/movie-projct-ts"
-                        deployUrl="https://movie-project-ts-eosin.vercel.app"
+                        githubUrl="https://github.com/seo1a/movie-projct-nextjs"
+                        deployUrl="https://movie-project-nextjs-five.vercel.app/"
                         projectColor="movie"
                         onMediaLoad={handleLoaded}
                     >

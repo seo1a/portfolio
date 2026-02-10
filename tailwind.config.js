@@ -12,6 +12,7 @@ export default {
         pixel2: ['"argent-pixel-cf"', 'sans-serif'],
         stack: ['"stack-fill"', 'sans-serif'],
         stackBricks: ['"stack-bricks"', 'sans-serif'],
+        oliveCitrus: ['olive-citrus', 'sans-serif'],
       },
     },
   },
